@@ -1,0 +1,221 @@
+#EXTM3U
+
+#EXTINF:-1 group-title="BALKAN",RTL HR
+https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/RTL/default/index.mpd
+
+#EXTINF:-1 group-title="BALKAN",RTL2 HR
+https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/RTL2/default/index.mpd
+
+#EXTINF:-1 group-title="BALKAN",TV JADRAN
+https://tvjadran.stream.agatin.hr:3412/live/tvjadranlive.m3u8
+
+#EXTINF:-1 group-title="BALKAN",N1
+https://best-str.umn.cdn.united.cloud/stream?stream=sp1400&sp=n1info&channel=n1hrv&u=n1info&p=n1Sh4redSecre7iNf0
+https://best-str.umn.cdn.united.cloud/stream?stream=sp1400&sp=n1info&channel=n1bos&u=n1info&p=n1Sh4redSecre7iNf0
+https://best-str.umn.cdn.united.cloud/stream?stream=sp1400&sp=n1info&channel=n1srp&u=n1info&p=n1Sh4redSecre7iNf0
+
+#EXTINF:-1 group-title="BALKAN",TELEVIZIJA M
+https://live.tv-m.net/hls/stream.m3u8
+
+#EXTINF:-1 group-title="BALKAN",HAYAT
+http://23.88.66.93/HAYAT/index.m3u8
+
+#EXTINF:-1 group-title="BALKAN",OBN
+http://23.88.66.93/OBN/index.m3u8
+
+#EXTINF:-1 group-title="BALKAN",RTRS
+https://parh.rtrs.tv/tv/live/playlist.m3u8
+http://parh.rtrs.tv:1935/tv/live/playlist.m3u8
+
+#EXTINF:-1 group-title="BALKAN",PINK TV
+https://edge8.pink.rs/pinktv/index.m3u8
+
+#EXTINF:-1 group-title="BALKAN",PINK RED
+https://edge8.pink.rs/redtv/playlist.m3u8
+https://edge8.pink.rs/redtv/index.m3u8
+
+#EXTINF:-1 group-title="BALKAN",RTV KRAGUJEVAC
+https://6069699a9e3f3.streamlock.net/rtvkg/uzivo/chunklist_w1996912920.m3u8
+
+#EXTINF:-1 group-title="BALKAN",KAROLINA TV
+https://peer2.tdiradio.com/static/streaming-playlists/hls/4207de1d-52e8-4591-ad9e-218069b864d1/0.m3u8
+
+#EXTINF:-1 group-title="BALKAN",ALTERNATIVNA
+https://vpn.komtel.ba/hls/mylivestream.m3u8
+
+#EXTINF:-1 group-title="BALKAN",BELLE AMIE
+http://92.60.238.10:1935/live/belleamie/index.m3u8
+
+#EXTINF:-1 group-title="FILMOVI",FilmBox Extra
+https://webtvstream.bhtelecom.ba/hls7/filmbox_extra.m3u8
+
+#EXTINF:-1 group-title="FILMOVI",FilmBox Premium
+https://webtvstream.bhtelecom.ba/hls6/filmbox_premium.m3u8
+
+#EXTINF:-1 group-title="FILMOVI",FilmBox Stars
+https://webtvstream.bhtelecom.ba/hls7/filmbox_stars.m3u8
+
+#EXTINF:-1 group-title="BALKAN",KURIR
+https://static.am.mediaoutcast.com/storage/nQJnjJkO/nQJnjJkO/stream/O68x4o8g/720p/720p.m3u8
+
+#EXTINF:-1 group-title="BALKAN",NOVA TV
+https://best-str.umn.cdn.united.cloud/stream?stream=hp7000&sp=novas&channel=novashd&u=novas&p=n0v43!23t001
+
+#EXTINF:-1 group-title="BALKAN",PI KANAL
+http://stream.pikanal.rs/pikanal/pgm.m3u8
+
+#EXTINF:-1 group-title="BALKAN",RT BALKAN
+https://rt-srb.rttv.com/dvr/rtbalkan/playlist_1600Kb.m3u8
+
+#EXTINF:-1 group-title="BALKAN",RTV 1
+http://212.200.230.50:1935/RTV/rtv1/playlist.m3u8
+
+#EXTINF:-1 group-title="BALKAN",RTV ZENICA
+https://stream.rtvze.ba/live/123/123.m3u8
+
+#EXTINF:-1 group-title="BALKAN",TELEVIZIJA 5
+https://balkanmedia.dynu.net/hls/tv5web.m3u8
+
+#EXTINF:-1 group-title="BALKAN",RTS 1
+https://webtvstream.bhtelecom.ba/rts1.m3u8
+
+#EXTINF:-1 group-title="BALKAN",RTS 2
+https://webtvstream.bhtelecom.ba/rts2.m3u8
+
+#EXTINF:-1 group-title="BALKAN",BHT 1
+https://webtvstream.bhtelecom.ba/hls13/bhrtportal_hd_1200.m3u8
+
+#EXTINF:-1 group-title="BALKAN",SUPER TV
+https://mirtv.club/live/mirtv/index.m3u8
+
+#EXTINF:-1 group-title="BALKAN",RTV HB
+https://prd-hometv-live-open.spectar.tv/ERO_1_083/playlist.m3u8
+
+#EXTINF:-1 group-title="BALKAN",TV NOVA
+https://stream.agatin.hr:3727/live/tvnovalive.m3u8
+
+#EXTINF:-1 group-title="MUZIKA",CMC TV
+https://stream.cmctv.hr:49998/cmc/live.m3u8
+
+#EXTINF:-1 group-title="BALKAN",AS
+https://best-str.nettv.cdn.united.cloud/stream?sp=partners&u=partners&p=yN93H7NTrMkx&stream=sp1400&adaptive=false&channel=channel1-srpaac
+
+#EXTINF:-1 group-title="BALKAN",BHRT
+https://bhrtstream.bhtelecom.ba/hls13/bhrtportal_hd_1200.m3u8
+
+#EXTINF:-1 group-title="BALKAN",BN TV
+https://rtvbn.tv:8080/live/index.m3u8
+
+#EXTINF:-1 group-title="BALKAN",CG 1
+http://cdn3.bcdn.rs:1935/cg1/smil:cg1.smil/playlist.m3u8
+
+#EXTINF:-1 group-title="BALKAN",CG 2
+http://cdn3.bcdn.rs:1935/cg2/smil:cg2.smil/playlist.m3u8
+
+#EXTINF:-1 group-title="BALKAN",CG 3
+https://parlament.rtcg.me:1936/pr/smil:parlament.smil/playlist.m3u8
+
+#EXTINF:-1 group-title="BALKAN",CG MNE
+https://webtvstream.bhtelecom.ba/tvcg_mne.m3u8
+
+#EXTINF:-1 group-title="BALKAN",HAPPY TV
+https://stream1.happytv.rs/Happytv/myStream/playlist.m3u8
+
+#EXTINF:-1 group-title="BALKAN",NARODNA TV
+https://edge8.pink.rs/narodnatv/playlist.m3u8
+
+#EXTINF:-1 group-title="BALKAN",NOVA S
+https://best-str.umn.cdn.united.cloud/stream?stream=hp7000&sp=novas&channel=novashd&u=novas&p=n0v43!23t001&player=m3u8
+
+#EXTINF:-1 group-title="BALKAN",RTV 2
+http://212.200.230.50:1935/RTV/rtv2/playlist.m3u8
+
+#EXTINF:-1 group-title="BALKAN",STUDIO B
+http://91.148.117.134:1935/studiob/studiob.stream/playlist.m3u8
+
+#EXTINF:-1 group-title="BALKAN",ATV KOSOVO
+https://gjirafa-video-live.gjirafa.net/gjvideo-live/0nj-g63-92x-few/index.m3u8
+
+#EXTINF:-1 group-title="BALKAN",PRO 1 KOSOVO
+https://gjirafa-video-live.gjirafa.net/gjvideo-live/nng-gki-l1j-n1z/index.m3u8
+
+#EXTINF:-1 group-title="BALKAN",T7 KOSOVO
+https://gjirafa-video-live.gjirafa.net/gjvideo-livestream-specific/1z8-byc-4ee-lc9/tracks-v2a1/rewind-14400.ts.m3u8
+
+#EXTINF:-1 group-title="BALKAN",AL JAZEERA BALKANS
+https://live-hls-web-ajb.getaj.net/AJB/index.m3u8
+
+#EXTINF:-1 group-title="PLUTO TV",00s Replay
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/61326b9fcbecdc0007f7f6d7/master.m3u8
+
+#EXTINF:-1 group-title="PLUTO TV",70s Cinema
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5efb60d3a85c730007ac0b7c/master.m3u8
+
+#EXTINF:-1 group-title="PLUTO TV",80s Rewind
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/61326c0c5c3f2500076c8c3a/master.m3u8
+
+#EXTINF:-1 group-title="PLUTO TV",90s Throwback
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/61326c447b1b2a0007f2d5df/master.m3u8
+
+#EXTINF:-1 group-title="PLUTO TV",Action Movies
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5ca6748a37b88b269472dad9/master.m3u8
+
+#EXTINF:-1 group-title="PLUTO TV",Comedy Movies
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5ca674e0ffcd9500097cda10/master.m3u8
+
+#EXTINF:-1 group-title="PLUTO TV",Drama Movies
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5ca6751a37b88b269472db38/master.m3u8
+
+#EXTINF:-1 group-title="PLUTO TV",Sci-Fi Movies
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5ca6758f37b88b269472dbb8/master.m3u8
+
+#EXTINF:-1 group-title="PLUTO TV",Thriller Movies
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5ca6765c37b88b269472dc4e/master.m3u8
+
+#EXTINF:-1 group-title="PLUTO TV",Top Gear
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5ca676a937b88b269472dcbb/master.m3u8
+
+#EXTINF:-1 group-title="PLUTO TV",Unsolved Mysteries
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5ca6773a37b88b269472dd47/master.m3u8
+
+#EXTINF:-1 group-title="PLUTO TV",Nature Vision
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5ca677bd37b88b269472ddcc/master.m3u8
+
+#EXTINF:-1 group-title="PLUTO TV",Crime Network
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5ca6782137b88b269472de35/master.m3u8
+
+#EXTINF:-1 group-title="STRANI",Al Jazeera English
+https://live-hls-web-aje.getaj.net/AJE/index.m3u8
+
+#EXTINF:-1 group-title="STRANI",France 24
+https://static.france24.com/live/F24_EN_HI_HLS/live_web.m3u8
+
+#EXTINF:-1 group-title="STRANI",DW News
+https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/index.m3u8
+
+#EXTINF:-1 group-title="STRANI",Sky News
+https://skynewsau-live.akamaized.net/hls/live/2002689/skynewsau1/master.m3u8
+
+#EXTINF:-1 group-title="STRANI",CNN
+https://turnerlive.warnermediacdn.com/hls/live/586497/cnn_live/playlist.m3u8
+
+#EXTINF:-1 group-title="STRANI",BBC News
+http://vs-hls-pushb-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/pc_hd_abr_v2.m3u8
+
+#EXTINF:-1 group-title="MUZIKA",MTV Hits
+http://unilivemedia-lh.akamaihd.net/i/Live_1@367061/master.m3u8
+
+#EXTINF:-1 group-title="MUZIKA",MTV Dance
+http://unilivemedia-lh.akamaihd.net/i/Live_1@367062/master.m3u8
+
+#EXTINF:-1 group-title="MUZIKA",MTV Rocks
+http://unilivemedia-lh.akamaihd.net/i/Live_1@367063/master.m3u8
+
+#EXTINF:-1 group-title="SPORT",Arena Sport 1
+http://example.com/arena1.m3u8
+
+#EXTINF:-1 group-title="SPORT",Arena Sport 2
+http://example.com/arena2.m3u8
+
+#EXTINF:-1 group-title="SPORT",Arena Sport 3
+http://example.com/arena3.m3u8
