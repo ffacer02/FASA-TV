@@ -1,48 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>M3U Filter</title>
+<style>
+body { font-family: monospace; background:#111; color:#0f0; padding:20px; }
+</style>
+</head>
 <body>
+
 <pre id="out">Loading...</pre>
 
 <script>
-const url = "https://raw.githubusercontent.com/ffacer02/FASA-TV/main/lista.m3u";
+const SOURCE = "https://raw.githubusercontent.com/ffacer02/FASA-TV/main/lista.m3u";
 
-fetch(url)
-  .then(r => r.text())
-  .then(txt => {
-    const lines = txt.split("\n");
+// --- DETEKCIJA GRUPE ---
+function detectGroup(name) {
+  const n = name.toLowerCase();
 
-    let out = "#EXTM3U\n\n";
-    let current = "";
-    let seen = {};
+  if (n.includes("arena") || n.includes("sport") || n.includes("sk")) return "SPORT";
+  if (n.includes("rts") || n.includes("pink") || n.includes("nova") || n.includes("bht") || n.includes("rtl")) return "DOMACI";
+  if (n.includes("film") || n.includes("cinema") || n.includes("hbo")) return "FILMOVI";
 
-    for (let line of lines) {
-      line = line.trim();
+  return "STRANI";
+}
 
-      if (line.startsWith("#EXTINF")) {
-        current = line.split(",")[1]?.trim();
-      }
+// --- CLEAN IMENA ---
+function cleanName(name) {
+  return name
+    .replace(/\bHD\b|\bFHD\b|\bSD\b/gi, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
 
-      if (line.startsWith("http")) {
-        if (!seen[current]) {
-          seen[current] = [];
-        }
+// --- CHECK LINK (basic) ---
+async function checkUrl(url) {
+  try {
+    const res = await fetch(url, { method: "HEAD", mode: "no-cors" });
+    return true; // browser ograničenje – ne može 100% provjera
+  } catch {
+    return false;
+  }
+}
 
-        if (!seen[current].includes(line)) {
-          seen[current].push(line);
-        }
-      }
+fetch(SOURCE)
+.then(r => r.text())
+.then(async txt => {
+
+  const lines = txt.split("\n");
+
+  let current = "";
+  let channels = {};
+
+  for (let line of lines) {
+    line = line.trim();
+
+    if (line.startsWith("#EXTINF")) {
+      current = cleanName(line.split(",")[1] || "Unknown");
     }
 
-    for (let name in seen) {
-      out += `#EXTINF:-1,${name}\n`;
-      seen[name].forEach(url => {
+    if (line.startsWith("http")) {
+      if (!channels[current]) {
+        channels[current] = [];
+      }
+
+      if (!channels[current].includes(line)) {
+        channels[current].push(line);
+      }
+    }
+  }
+
+  let groups = {
+    DOMACI: {},
+    SPORT: {},
+    FILMOVI: {},
+    STRANI: {},
+    OSTALO: {}
+  };
+
+  // raspored u grupe
+  for (let name in channels) {
+    const group = detectGroup(name);
+    if (!groups[group]) groups[group] = {};
+    groups[group][name] = channels[name];
+  }
+
+  // --- GENERISANJE M3U ---
+  let out = "#EXTM3U\n\n";
+
+  for (let group in groups) {
+    let sortedNames = Object.keys(groups[group]).sort();
+
+    for (let name of sortedNames) {
+      let urls = groups[group][name];
+
+      out += `#EXTINF:-1 group-title="${group}",${name}\n`;
+
+      for (let url of urls) {
+        // OPTIONAL CHECK
+        // let ok = await checkUrl(url);
+        // if (!ok) continue;
+
         out += url + "\n";
-      });
+      }
+
       out += "\n";
     }
+  }
 
-    document.getElementById("out").textContent = out;
-  });
+  document.getElementById("out").textContent = out;
+});
 </script>
+
 </body>
 </html>
