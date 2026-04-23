@@ -15,8 +15,9 @@ function cleanName(name) {
 function detectGroup(name) {
   name = name.toLowerCase();
 
-  if (name.includes("sport")) return "Sport";
-  if (name.includes("arena") || name.includes("sk")) return "Sport";
+  if (name.includes("sport") || name.includes("arena") || name.includes("sk"))
+    return "Sport";
+
   if (name.includes("pink") || name.includes("rts") || name.includes("hbo"))
     return "Domaci";
 
@@ -40,7 +41,7 @@ export default async function handler(req, res) {
       }
 
       if (line.startsWith("http")) {
-        let group = detectGroup(currentName);
+        const group = detectGroup(currentName);
 
         // provjeri postoji li kanal
         let { data: existing } = await supabase
@@ -51,7 +52,7 @@ export default async function handler(req, res) {
 
         let channelId;
 
-        if (existing.length > 0) {
+        if (existing && existing.length > 0) {
           channelId = existing[0].id;
         } else {
           const { data: newChannel } = await supabase
@@ -66,14 +67,14 @@ export default async function handler(req, res) {
           channelId = newChannel.id;
         }
 
-        // dodaj stream ako već ne postoji
-        const { data: existingStream } = await supabase
+        // provjeri postoji li stream
+        let { data: existingStream } = await supabase
           .from("streams")
           .select("*")
           .eq("url", line)
           .limit(1);
 
-        if (!existingStream.length) {
+        if (!existingStream || existingStream.length === 0) {
           await supabase.from("streams").insert({
             channel_id: channelId,
             url: line,
@@ -84,9 +85,9 @@ export default async function handler(req, res) {
       }
     }
 
-    res.json({ success: true });
+    return res.status(200).json({ success: true });
 
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    return res.status(500).json({ error: err.message });
   }
 }
