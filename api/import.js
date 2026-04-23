@@ -25,7 +25,7 @@ function detectGroup(name) {
 
 export default async function handler(req, res) {
   try {
-    const m3uUrl = "https://raw.githubusercontent.com/ffacer02/FASA-TV/blob/main/lista.m3u";
+    const m3uUrl = "https://raw.githubusercontent.com/ffacer02/FASA-TV/main/lista.m3u";
 
     const txt = await fetch(m3uUrl).then(r => r.text());
     const lines = txt.split("\n");
