@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+<pre id="out">Loading...</pre>
+
+<script>
+const url = "https://raw.githubusercontent.com/ffacer02/FASA-TV/main/lista.m3u";
+
+fetch(url)
+  .then(r => r.text())
+  .then(txt => {
+    const lines = txt.split("\n");
+
+    let out = "#EXTM3U\n\n";
+    let current = "";
+    let seen = {};
+
+    for (let line of lines) {
+      line = line.trim();
+
+      if (line.startsWith("#EXTINF")) {
+        current = line.split(",")[1]?.trim();
+      }
+
+      if (line.startsWith("http")) {
+        if (!seen[current]) {
+          seen[current] = [];
+        }
+
+        if (!seen[current].includes(line)) {
+          seen[current].push(line);
+        }
+      }
+    }
+
+    for (let name in seen) {
+      out += `#EXTINF:-1,${name}\n`;
+      seen[name].forEach(url => {
+        out += url + "\n";
+      });
+      out += "\n";
+    }
+
+    document.getElementById("out").textContent = out;
+  });
+</script>
+</body>
+</html>
